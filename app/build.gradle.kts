@@ -75,7 +75,7 @@ dependencies {
     implementation(libs.utilcodex)
 
     // SwitchGo SDK
-    implementation(files("libs/SwitchGoLibrary_1.1.7.aar"))
+    implementation(files("libs/SwitchGoLibrary_1.1.8.aar"))
 
     // Testing
     testImplementation(libs.junit)

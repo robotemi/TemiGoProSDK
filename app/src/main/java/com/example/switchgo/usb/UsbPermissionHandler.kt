@@ -78,7 +78,7 @@ class UsbPermissionHandler(
 
     private fun findSwitchGoDevice(usbManager: UsbManager): UsbDevice? {
         return usbManager.deviceList.values.firstOrNull { device ->
-            device.interfaceCount > 0
+            device.vendorId == 1155 && device.productId == 22352
         }
     }
 }
