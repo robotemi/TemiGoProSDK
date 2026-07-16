@@ -14,7 +14,7 @@ Place `SwitchGoLibrary_<version>.aar` in `app/libs/` and add to `build.gradle.kt
 
 ```kotlin
 dependencies {
-    implementation(files("libs/SwitchGoLibrary_1.1.7.aar"))
+    implementation(files("libs/SwitchGoLibrary_1.1.8.aar"))
 }
 ```
 
@@ -40,7 +40,7 @@ dependencies {
 The SDK auto-initializes via `ContentProvider`. Get the instance directly:
 
 ```kotlin
-val switchGo = SwitchGo.getInstance()
+val switchGo = SwitchGo.getInstance(application)
 ```
 
 ### Connection Lifecycle
@@ -84,4 +84,4 @@ See the demo app source for detailed examples.
 
 | SDK | minSdk | Kotlin | Coroutines |
 |-----|--------|--------|------------|
-| 1.1.7 | 24 | 2.0 | 1.7.3 |
+| 1.1.8 | 24 | 2.0 | 1.7.3 |

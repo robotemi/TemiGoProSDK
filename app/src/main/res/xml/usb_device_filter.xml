@@ -4,6 +4,5 @@
     Update the vendor-id and product-id with the actual SwitchGo VID/PID.
 -->
 <resources>
-    <!-- Example: <usb-device vendor-id="1234" product-id="5678" /> -->
-    <!-- Add the actual SwitchGo vendor-id and product-id for automatic device detection -->
+    <usb-device vendor-id="1155" product-id="22336" />
 </resources>

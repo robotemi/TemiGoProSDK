@@ -14,7 +14,7 @@ Demo 应用（`app/` 模块）可作为 SDK 集成参考，展示了完整的使
 
 ```kotlin
 dependencies {
-    implementation(files("libs/SwitchGoLibrary_1.1.7.aar"))
+    implementation(files("libs/SwitchGoLibrary_1.1.8.aar"))
 }
 ```
 
@@ -40,7 +40,7 @@ SDK 的 `AndroidManifest.xml` 已声明 `USB_PERMISSION`，通过 manifest merge
 SDK 通过 `ContentProvider` 自动初始化，直接获取实例即可：
 
 ```kotlin
-val switchGo = SwitchGo.getInstance()
+val switchGo = SwitchGo.getInstance(application)
 ```
 
 ### 连接管理
@@ -84,4 +84,4 @@ switchGo.stopAutoConnect()
 
 | SDK | minSdk | Kotlin | 协程 |
 |-----|--------|--------|------|
-| 1.1.7 | 24 | 2.0 | 1.7.3 |
+| 1.1.8 | 24 | 2.0 | 1.7.3 |
